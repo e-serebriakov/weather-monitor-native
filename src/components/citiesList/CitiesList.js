@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 import CityCard from '../cityCard/CityCard';
 
@@ -9,10 +8,6 @@ const CitiesWrapper = styled.section`
   flex-wrap: wrap;
   justify-content:center;
   align-items: center;
-
-  @media (min-width: 730px) {
-    justify-content: flex-start;
-  }
 `;
 
 const CitiesList = ({ onClickDeleteBtn, cities }) => {

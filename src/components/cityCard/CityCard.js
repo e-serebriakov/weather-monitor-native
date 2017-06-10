@@ -1,6 +1,5 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import styled from 'styled-components';
 
 const Card = styled.div`
   position: relative;
@@ -13,10 +12,6 @@ const Card = styled.div`
   background-color: white;
   border-radius: 5px;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-  @media (min-width: 685px) {
-    margin-right: 10px;
-    margin-left: 10px;
-  }
 `;
 
 const CityText = styled.h3`
