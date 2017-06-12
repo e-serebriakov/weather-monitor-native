@@ -3,10 +3,10 @@ import { StyleSheet } from 'react-native';
 const Style = StyleSheet.create({
   form: {
     position: 'relative',
-//    flex: 1,
     flexDirection: 'row',
+    flexWrap: 'wrap',
     height: 40,
-    marginBottom: 25
+    marginBottom: 30
   },
   input: {
     height: 40,

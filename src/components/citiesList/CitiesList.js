@@ -1,20 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { View } from 'react-native';
 
 import CityCard from '../cityCard/CityCard';
-
-const CitiesWrapper = styled.section`
-  display: flex;
-  flex-wrap: wrap;
-  justify-content:center;
-  align-items: center;
-`;
+import styles from './styles';
 
 const CitiesList = ({ onClickDeleteBtn, cities }) => {
   return (
-    <CitiesWrapper>
+    <View style={styles.container}>
       {cities.map(city => <CityCard key={city.id} onRemove={onClickDeleteBtn} data={city} />)}
-    </CitiesWrapper>
+    </View>
   );
 };
 

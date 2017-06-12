@@ -22,17 +22,19 @@ const AddForm = ({ inputError, onBtnPress, onInputChange, inputValue }) => {
         inputError={inputError}
         underlineColorAndroid="transparent"
       />
-      {inputError &&
-        <Text>
-          Enter city name (example: Moscow, ru) with country code or city code (example: 2172797)
-        </Text>}
       <TouchableHighlight
         style={styles.button}
         onPress={onBtnPress}
         underlayColor="#f95d5c"
       >
         <Text style={styles.buttonText}>Add city</Text>
-       </TouchableHighlight>
+      </TouchableHighlight>
+      {
+        inputError &&
+        <Text>
+          Enter city name (example: Moscow, ru) with country code or city code (example: 2172797)
+        </Text>
+      }
     </View>
   );
 };

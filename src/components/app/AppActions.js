@@ -1,5 +1,5 @@
 import { asyncAction } from '../../common/utils/api';
-import { apiUrl, appID } from '../../../config';
+import { apiUrl, appID } from '../../config';
 
 export const ADD_CITY = 'App/addCity';
 export const GET_CURRENT_CITY_WEATHER = 'App/getWeatherByCoords';
