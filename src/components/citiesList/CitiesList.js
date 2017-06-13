@@ -8,7 +8,7 @@ import styles from './styles';
 const CitiesList = ({ onClickDeleteBtn, cities }) => {
   return (
     <View style={styles.container}>
-      {cities.map(city => <CityCard key={city.id} onRemove={onClickDeleteBtn} data={city} />)}
+      {cities.map(city => <CityCard key={city.id} onRemove={onClickDeleteBtn.bind(null, city.id)} data={city} />)}
     </View>
   );
 };

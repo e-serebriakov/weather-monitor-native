@@ -9,8 +9,6 @@ import {
 
 import styles from './styles';
 
-//import { addBtnShake } from './styles/keyframes';
-
 const AddForm = ({ inputError, onBtnPress, onInputChange, inputValue }) => {
   return (
     <View style={styles.form}>
@@ -27,7 +25,7 @@ const AddForm = ({ inputError, onBtnPress, onInputChange, inputValue }) => {
         onPress={onBtnPress}
         underlayColor="#f95d5c"
       >
-        <Text style={styles.buttonText}>Add city</Text>
+        <Text style={styles.buttonText}>+</Text>
       </TouchableHighlight>
       {
         inputError &&

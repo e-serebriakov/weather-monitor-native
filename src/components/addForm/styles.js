@@ -32,16 +32,20 @@ const Style = StyleSheet.create({
     color: '#fe4a49'
   },
   button: {
+    // position: 'fixed',
+    bottom: 0, // @TODO
+    right: 10, // @TODO
     flex: 3,
     flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 5,
+    borderRadius: 25,
     backgroundColor: '#fe4a49',
 //    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
   },
   buttonText: {
     fontFamily: 'PT Sans',
+    fontSize: 35,
     color: '#fff',
   }
 });

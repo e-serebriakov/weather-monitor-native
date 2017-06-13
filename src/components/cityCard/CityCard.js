@@ -11,7 +11,6 @@ import styles from './styles';
 
 const CityCard = ({ onRemove, data }) => {
   const {
-    id,
     name,
     country,
     temperature,
@@ -24,6 +23,7 @@ const CityCard = ({ onRemove, data }) => {
       text: 'delete',
       backgroundColor: '#fe4a49',
       underlayColor: 'rgba(0, 0, 0, 1, 0.6)',
+      onPress: onRemove
     }
   ];
 
@@ -33,7 +33,7 @@ const CityCard = ({ onRemove, data }) => {
       style={{borderRadius: 5, backgroundColor: '#fff'}}
       autoClose
     >
-      <View style={styles.card} data-id={id}>
+      <View style={styles.card}>
         <Text>{name} ({country})</Text>
         <Text>{Math.round(temperature)} &#176;C</Text>
         <Text>{weather}</Text>
@@ -48,7 +48,6 @@ const CityCard = ({ onRemove, data }) => {
 
 CityCard.propTypes = {
   onRemove: PropTypes.func.isRequired,
-  data: PropTypes.object.isRequired,
 };
 
 export default CityCard;
